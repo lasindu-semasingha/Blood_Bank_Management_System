@@ -1,0 +1,863 @@
+body{
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    meta {
+      name: viewport;
+      content: width=device-width, initial-scale=1.0;
+    }
+}
+.top{
+    overflow: hidden;
+}
+.top img{
+    width: 70px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.top h1{
+    font-size: 50px;
+    float: left;
+}
+
+.index{
+    text-decoration: none;
+    color: black;
+}
+
+.log{
+    float: right;
+    padding: 2px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.log[href="./login.php"], .log[href="../login.php"]{
+  background-color: white;
+  border: 1px solid crimson;
+  color: black;
+}
+.log[href="./login.php"]:hover, .log[href="../login.php"]:hover{
+  background-color: forestgreen;
+  border: 1px solid crimson;
+  color: white;
+}
+
+.log:hover{
+    background-color: white;
+    color: black;
+    border: 1px double crimson;
+}
+
+.navb {
+    overflow: hidden;
+    background-color: crimson;
+    opacity: 90%;
+}
+  
+.navb a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.navb a:hover {
+    background-color: rgb(231, 205, 205);
+    color: black;
+}
+  
+.navb a.active {
+    background-color: white;
+    color: black;
+}
+  
+
+.navb input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+.navb button {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 7px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.navb button:hover{
+  background-color: rgb(243, 222, 226);
+  color: black;
+}
+.navb button:active{
+  transform: scale(0.9);
+}
+  
+.para{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    b{
+        font-size: 25px;
+    }
+}
+#slideshow {
+    overflow: hidden;
+    margin-top: 20px;
+    opacity:1;
+  }
+
+  div#slideshow.fade {
+    opacity:0;
+    }
+
+  #slideshow img {
+    width: 1000px;
+    height: 300px;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    transition: ease-in-out;
+    border-radius: 10px;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1{
+        background-color: transparent;
+        color: transparent;
+    }
+    h1:hover{
+        background-color: transparent;
+        color: black;
+    }
+  }
+
+  #slideshow img.active {
+    display: flex;
+  }
+
+  .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+    padding: 20px;
+    cursor:default;
+    h2{
+      font-weight: 100;
+      strong{
+        font-weight: 700;
+      }
+      strong:hover{
+        color: crimson;
+      }
+    }
+  }
+
+  .indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #aaa;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .indicator.active {
+    background-color: #dc3545;
+  }
+
+  .next-btn {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+.service{
+    ul{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    h2{
+        text-align: center;
+    }
+}
+.foot{
+    background-color: crimson;
+    border-radius: 5px;
+    overflow: hidden;
+
+    h4{
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .category{
+        display: flex;
+        gap: 70px;
+        
+        .link{
+            
+            a{
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+            a:hover{
+                font-weight: 700;
+            }
+            
+        }
+        .highlights{
+            a{
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+            a:hover{
+                font-weight: 700;
+            }
+        }
+        .social{
+            display: inline-block;
+            
+            img{
+                height: 35px;
+                width: 35px;
+                cursor: pointer;
+                display: inline-block;
+            }
+            img:hover{
+                transform: scale(1.2);
+            }
+        }
+        .mission{
+            p{
+                justify-content: center;
+                color: white;
+                position: relative;
+            }
+        }
+    }
+    
+}
+.under{
+    p{
+        text-align: center;
+    }
+}
+.cards {
+    display: flex;
+    margin-bottom: 10px;
+    position: relative;
+
+    .doctor, .hospital, .donation, .info {
+        text-align: left;
+        border: none;
+        border-radius: 10px;
+        width: 220px;
+        height: 340px;
+        background-color: rgb(243, 222, 226);
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        h3, p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .btn {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+            button {
+                background-color: crimson;
+                color: white;
+                width: 90%;
+                border-radius: 5px;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            button:hover {
+                background-color: white;
+                color: black;
+            }
+
+            button:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+.responsive-table {
+    li {
+      border-radius: 3px;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .table-row {
+      background-color: #ffffff;
+      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    }
+    .col-1 {
+      flex-basis: 10%;
+    }
+    .col-2 {
+      flex-basis: 40%;
+    }
+    .col-3 {
+      flex-basis: 1%;
+      a{
+        padding: 10px;
+        background-color: crimson;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 700;
+      }
+      a:hover{
+        background-color: white;
+        color: black;
+        border: 1px solid crimson;
+      }
+      a:active{
+        transform: scale(0.4);
+        border: 1px solid crimson;
+      }
+    }
+    .col-4 {
+      flex-basis: 1%;
+    }  
+}
+  .head{
+    h1{
+        text-align: center;
+    }
+  }
+.bord{
+  border: 1px solid crimson;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  h2{
+    margin-left: 15px;
+  }
+}
+.bord:hover{
+  transform: scale(1.005);
+  border: 3px solid red;
+}
+.serv{
+  button{
+    margin-left: 20px;
+    border: none;
+    background-color: crimson;
+    padding: 10px;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid crimson;
+  }
+  button:active{
+    transform: scale(0.9);
+  }
+}
+.serv{
+  .d-btn{
+    margin-left: 20px;
+    border: none;
+    background-color: crimson;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    opacity: 75%;
+  }
+  .d-btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid crimson;
+  }
+  .d-btn:active{
+    transform: scale(0.9);
+  }
+}
+.partner{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 50px;
+  background-color: #aaa;
+  display: flex;
+  gap: 30px;
+  .box{
+    h2{
+      font-size: 40px;
+      font-family:cursive;
+    }
+    button{
+      padding: 40px;
+      font-size: 30px;
+      background-color: forestgreen;
+      color: white;
+      border-radius: 15px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover{
+      background-color: white;
+      color: black;
+    }
+    button:active{
+      transform: scale(0.9);
+    }
+  }
+}
+.search{
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid crimson;
+  margin-top: 5px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  .box{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    
+  }
+}
+.flip{
+  h1{
+    font-size: 65px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  .flip-in{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    gap: 20px;
+    padding-bottom: 10px;
+    .card1{
+      padding: 10px;
+      background-color: #da6974;
+      max-width: 280px;
+      border-radius: 15px;
+      text-align: center;
+      h3{
+        color: white;
+        font-size: 25px;
+      }
+    }
+  }
+}
+.tracking-in-expand {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top img {
+      width: 50px;
+      height: 70px;
+      margin-top: 5px;
+      margin-left: 5px;
+  }
+
+  .top h1 {
+      font-size: 30px;
+  }
+
+  .log {
+      margin-top: 10px;
+      margin-right: 5px;
+  }
+
+  .navb input[type=text], .navb button {
+      margin: 8px 10px;
+  }
+
+  .navb a {
+      padding: 10px;
+      font-size: 16px;
+  }
+
+  .content h2 {
+      font-size: 18px;
+      strong {
+          font-size: 20px;
+      }
+  }
+
+  .slide-text, .centered h1 {
+      font-size: 16px;
+  }
+
+  .cards .doctor, .cards .hospital, .cards .donation, .cards .info {
+      width: 100%;
+      height: auto;
+  }
+
+  .foot h4 {
+      font-size: 16px;
+  }
+
+  .responsive-table li {
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  .responsive-table .col-1, .responsive-table .col-2, .responsive-table .col-3, .responsive-table .col-4 {
+      flex-basis: 100%;
+  }
+
+  .flip h1 {
+      font-size: 40px;
+  }
+
+  .flip .card1 {
+      max-width: 100%;
+  }
+
+  .search {
+      max-width: 90%;
+  }
+}
+.mainbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .box1{
+    border: none;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    
+    .box2{
+      width: 35%;
+      background-color: rgb(255, 36, 80);
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 5px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      .email{
+        padding-left: 5%;
+        padding-top: 20%;
+        display: flex;
+        gap: 10px;
+      }
+      .mobile{
+        display: flex;
+        padding-left: 5%;
+        gap: 10px;
+      }
+    }
+    .box3{
+      width: 70%;
+
+      background-color: #aaa;
+      
+
+      form{
+        padding-top: 12%;
+        padding-left: 5%;
+        text-align: center;
+        
+        input[type="text"], input[type="email"]{
+          padding: 10px;
+          width: 75%;
+          border-radius: 5px;
+          border: none;
+        }
+        textarea{
+          width: 78%;
+          border-radius: 5px;
+          border: none;
+        }
+        input[type="submit"]{
+          float: right;
+          margin-right: 10%;
+          padding: 10px;
+          font-size: 20px;
+          font-weight: 700;
+          background-color: #ffffff;
+          color: black;
+          border: none;
+          border-radius: 10%;
+          cursor: pointer;
+        }
+        input[type="submit"]:hover{
+          background-color: rgb(255, 36, 80);;
+          color: white;
+        }
+      }
+
+      
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  
+  .top img {
+    width: 50px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+
+  .top h1 {
+    font-size: 30px;
+  }
+
+  .log {
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .navb input[type=text],
+  .navb button {
+    margin: 8px 10px;
+  }
+
+  .navb a {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+    strong {
+      font-size: 20px;
+    }
+  }
+
+  .slide-text,
+  .centered h1 {
+    font-size: 16px;
+  }
+
+  .cards .doctor,
+  .cards .hospital,
+  .cards .donation,
+  .cards .info {
+    width: 50%;
+    height: auto;
+    h3{
+      font-size: 15px;
+    }
+    p{
+      display: none;
+    }
+  }
+
+  .foot h4 {
+    font-size: 16px;
+  }
+
+  .responsive-table li {
+    flex-direction: column;
+    padding: 15px;
+    place-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .responsive-table .col-1,
+  .responsive-table .col-2,
+  .responsive-table .col-3,
+  .responsive-table .col-4 {
+    strong{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+  }
+
+  .flip h1 {
+    font-size: 40px;
+  }
+
+  .flip .card1 {
+    display: none;
+  }
+
+  .search {
+    max-width: 90%;
+  }
+
+  .mainbox {
+    flex-direction: column;
+
+    .box1 {
+      width: 100%;
+
+      .box2,
+      .box3 {
+        width: 100%;
+      }
+    }
+  }
+  .partner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    img{
+      width: 300px;
+      height: 150px;
+    }
+  }
+  #slideshow img {
+    width: 350px;
+    height: 150px;
+  }
+  .foot {
+    font-size: 16px;
+}
+
+.foot .category {
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot .social {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot .mission p {
+    margin-top: 10px;
+}
+}
+.hosbtn{
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: crimson;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hosbtn:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid crimson;
+}
+.hosbtn:active{
+  transform: scale(0.9);
+  border: 1px solid crimson;
+}
